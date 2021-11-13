@@ -63,6 +63,16 @@ namespace ExamenIIParcial_ScarlethBaquedano.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap administracion {
+            get {
+                object obj = ResourceManager.GetObject("administracion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap caja_de_herramientas {
             get {
                 object obj = ResourceManager.GetObject("caja-de-herramientas", resourceCulture);
@@ -93,9 +103,29 @@ namespace ExamenIIParcial_ScarlethBaquedano.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap desbloquear {
+            get {
+                object obj = ResourceManager.GetObject("desbloquear", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap entradas__1_ {
             get {
                 object obj = ResourceManager.GetObject("entradas (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap escritorio_de_oficina {
+            get {
+                object obj = ResourceManager.GetObject("escritorio_de_oficina", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -116,6 +146,16 @@ namespace ExamenIIParcial_ScarlethBaquedano.Properties {
         internal static System.Drawing.Bitmap login__1_ {
             get {
                 object obj = ResourceManager.GetObject("login (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mantenimiento_web {
+            get {
+                object obj = ResourceManager.GetObject("mantenimiento_web", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

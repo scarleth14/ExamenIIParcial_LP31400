@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ExamenIIParcial_ScarlethBaquedano.Controladores;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,9 @@ namespace ExamenIIParcial_ScarlethBaquedano.Vistas
         public TipoSoporteView()
         {
             InitializeComponent();
+            TipoSoporteController controlador = new TipoSoporteController(this);
         }
+
+       
     }
 }

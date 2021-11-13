@@ -29,8 +29,6 @@ namespace ExamenIIParcial_ScarlethBaquedano.Vistas
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuView));
             this.ribbonControlAdv1 = new Syncfusion.Windows.Forms.Tools.RibbonControlAdv();
             this.toolStripTabItem1 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
             this.toolStripTabItem2 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
@@ -40,7 +38,6 @@ namespace ExamenIIParcial_ScarlethBaquedano.Vistas
             this.toolStripEx2 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
             this.toolStripEx3 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
             this.toolStripEx4 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
-            this.tabbedMDIManager1 = new Syncfusion.Windows.Forms.Tools.TabbedMDIManager(this.components);
             this.TiposToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.EstadoTicketToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.TicketToolStripButton = new System.Windows.Forms.ToolStripButton();
@@ -59,16 +56,15 @@ namespace ExamenIIParcial_ScarlethBaquedano.Vistas
             // 
             // ribbonControlAdv1
             // 
-            this.ribbonControlAdv1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.ribbonControlAdv1.CaptionFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ribbonControlAdv1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.ribbonControlAdv1.Dock = Syncfusion.Windows.Forms.Tools.DockStyleEx.Top;
             this.ribbonControlAdv1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ribbonControlAdv1.Header.AddMainItem(toolStripTabItem1);
             this.ribbonControlAdv1.Header.AddMainItem(toolStripTabItem2);
             this.ribbonControlAdv1.Header.AddMainItem(toolStripTabItem3);
             this.ribbonControlAdv1.Header.AddMainItem(toolStripTabItem4);
-            this.ribbonControlAdv1.Location = new System.Drawing.Point(-2, -6);
+            this.ribbonControlAdv1.Location = new System.Drawing.Point(0, 0);
             this.ribbonControlAdv1.MenuButtonFont = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ribbonControlAdv1.MenuButtonText = "";
             this.ribbonControlAdv1.MenuButtonWidth = 56;
@@ -91,7 +87,7 @@ namespace ExamenIIParcial_ScarlethBaquedano.Vistas
             this.ribbonControlAdv1.Size = new System.Drawing.Size(800, 175);
             this.ribbonControlAdv1.SystemText.QuickAccessDialogDropDownName = "Start menu";
             this.ribbonControlAdv1.SystemText.RenameDisplayLabelText = "&Display Name:";
-            this.ribbonControlAdv1.TabIndex = 0;
+            this.ribbonControlAdv1.TabIndex = 1;
             this.ribbonControlAdv1.Text = "ribbonControlAdv1";
             this.ribbonControlAdv1.ThemeName = "Office2016";
             this.ribbonControlAdv1.ThemeStyle.MoreCommandsStyle.PropertyGridViewBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
@@ -229,15 +225,6 @@ namespace ExamenIIParcial_ScarlethBaquedano.Vistas
             this.toolStripEx4.Size = new System.Drawing.Size(129, 109);
             this.toolStripEx4.TabIndex = 0;
             // 
-            // tabbedMDIManager1
-            // 
-            this.tabbedMDIManager1.AttachedTo = this;
-            this.tabbedMDIManager1.CloseButtonBackColor = System.Drawing.Color.White;
-            this.tabbedMDIManager1.CloseButtonToolTip = "";
-            this.tabbedMDIManager1.DropDownButtonToolTip = "";
-            this.tabbedMDIManager1.ImageSize = new System.Drawing.Size(16, 16);
-            this.tabbedMDIManager1.NeedUpdateHostedForm = false;
-            // 
             // TiposToolStripButton
             // 
             this.TiposToolStripButton.Image = global::ExamenIIParcial_ScarlethBaquedano.Properties.Resources.caja_de_herramientas;
@@ -293,6 +280,7 @@ namespace ExamenIIParcial_ScarlethBaquedano.Vistas
             this.IsMdiContainer = true;
             this.Name = "MenuView";
             this.Text = "MenuView";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControlAdv1)).EndInit();
             this.ribbonControlAdv1.ResumeLayout(false);
             this.ribbonControlAdv1.PerformLayout();
@@ -331,6 +319,5 @@ namespace ExamenIIParcial_ScarlethBaquedano.Vistas
         private System.Windows.Forms.ToolStripButton TiposToolStripButton;
         private Syncfusion.Windows.Forms.Tools.ToolStripEx toolStripEx4;
         private System.Windows.Forms.ToolStripButton DetalleTicketToolStripButton;
-        private Syncfusion.Windows.Forms.Tools.TabbedMDIManager tabbedMDIManager1;
     }
 }

@@ -50,10 +50,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controladores\EstadoTicketController.cs" />
     <Compile Include="Controladores\LoginController.cs" />
     <Compile Include="Controladores\RegistroController.cs" />
+    <Compile Include="Controladores\TicketController.cs" />
+    <Compile Include="Controladores\TipoSoporteController.cs" />
     <Compile Include="Modelos\DAO\Conexion.cs" />
+    <Compile Include="Modelos\DAO\EstadoTicketDAO.cs" />
+    <Compile Include="Modelos\DAO\TicketDAO.cs" />
+    <Compile Include="Modelos\DAO\TipoSoporteDAO.cs" />
     <Compile Include="Modelos\DAO\UsuarioDAO.cs" />
+    <Compile Include="Modelos\Entidades\EstadoTicket.cs" />
+    <Compile Include="Modelos\Entidades\Ticket.cs" />
+    <Compile Include="Modelos\Entidades\TipoDeSoporte.cs" />
     <Compile Include="Modelos\Entidades\Usuario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -109,6 +118,12 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\DetalleTicketView.resx">
+      <DependentUpon>DetalleTicketView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\EstadoTicketView.resx">
+      <DependentUpon>EstadoTicketView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\LoginView.resx">
       <DependentUpon>LoginView.cs</DependentUpon>
     </EmbeddedResource>
@@ -117,6 +132,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\RegistroView.resx">
       <DependentUpon>RegistroView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\TicketView.resx">
+      <DependentUpon>TicketView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\TipoSoporteView.resx">
       <DependentUpon>TipoSoporteView.cs</DependentUpon>
@@ -158,6 +176,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\administracion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\desbloquear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\escritorio-de-oficina.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mantenimiento-web.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

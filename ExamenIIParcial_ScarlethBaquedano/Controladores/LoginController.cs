@@ -41,7 +41,7 @@ namespace ExamenIIParcial_ScarlethBaquedano.Controladores
             Usuario user = new Usuario();
 
             user.Email = vista.txt_email.Text;
-            user.Contrasena= vista.txt_contrasena.Text;
+            user.Contrasena= EncriptarClave(vista.txt_contrasena.Text);
 
             esValido = userDAO.ValidarUsuario(user);
 
