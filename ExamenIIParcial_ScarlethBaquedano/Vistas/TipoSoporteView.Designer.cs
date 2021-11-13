@@ -36,6 +36,7 @@ namespace ExamenIIParcial_ScarlethBaquedano.Vistas
             this.rb_SoporteComputadora = new System.Windows.Forms.RadioButton();
             this.rb_SoporteCelular = new System.Windows.Forms.RadioButton();
             this.CelularPanel = new System.Windows.Forms.Panel();
+            this.pbx_ServicioCelular = new System.Windows.Forms.PictureBox();
             this.rb_desbloqueoCelular = new System.Windows.Forms.RadioButton();
             this.rb_ReparacionCelular = new System.Windows.Forms.RadioButton();
             this.rb_MantenimientoCelular = new System.Windows.Forms.RadioButton();
@@ -48,31 +49,27 @@ namespace ExamenIIParcial_ScarlethBaquedano.Vistas
             this.dtp_fecha = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.ComputadoraPanel = new System.Windows.Forms.Panel();
+            this.pbx_servicioComputo = new System.Windows.Forms.PictureBox();
             this.rb_LimpiezaPC = new System.Windows.Forms.RadioButton();
             this.rb_ReparacionPC = new System.Windows.Forms.RadioButton();
             this.rb_MantenimientoPC = new System.Windows.Forms.RadioButton();
             this.label6 = new System.Windows.Forms.Label();
-            this.btn_cancelar = new System.Windows.Forms.Button();
-            this.btn_eliminar = new System.Windows.Forms.Button();
             this.btn_guardar = new System.Windows.Forms.Button();
-            this.btn_modificar = new System.Windows.Forms.Button();
             this.btn_limpiar = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.pbx_ServicioCelular = new System.Windows.Forms.PictureBox();
-            this.pbx_servicioComputo = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.CelularPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbx_ServicioCelular)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.ComputadoraPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbx_ServicioCelular)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_servicioComputo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(208)))), ((int)(((byte)(253)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(170)))), ((int)(((byte)(251)))));
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -85,7 +82,7 @@ namespace ExamenIIParcial_ScarlethBaquedano.Vistas
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Hello Valentica", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(357, 9);
+            this.label1.Location = new System.Drawing.Point(351, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(323, 75);
@@ -135,6 +132,16 @@ namespace ExamenIIParcial_ScarlethBaquedano.Vistas
             this.CelularPanel.Name = "CelularPanel";
             this.CelularPanel.Size = new System.Drawing.Size(460, 263);
             this.CelularPanel.TabIndex = 3;
+            // 
+            // pbx_ServicioCelular
+            // 
+            this.pbx_ServicioCelular.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pbx_ServicioCelular.Location = new System.Drawing.Point(242, 70);
+            this.pbx_ServicioCelular.Name = "pbx_ServicioCelular";
+            this.pbx_ServicioCelular.Size = new System.Drawing.Size(174, 154);
+            this.pbx_ServicioCelular.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbx_ServicioCelular.TabIndex = 4;
+            this.pbx_ServicioCelular.TabStop = false;
             // 
             // rb_desbloqueoCelular
             // 
@@ -248,10 +255,20 @@ namespace ExamenIIParcial_ScarlethBaquedano.Vistas
             this.ComputadoraPanel.Controls.Add(this.rb_MantenimientoPC);
             this.ComputadoraPanel.Controls.Add(this.label6);
             this.ComputadoraPanel.Enabled = false;
-            this.ComputadoraPanel.Location = new System.Drawing.Point(528, 422);
+            this.ComputadoraPanel.Location = new System.Drawing.Point(528, 413);
             this.ComputadoraPanel.Name = "ComputadoraPanel";
             this.ComputadoraPanel.Size = new System.Drawing.Size(460, 253);
             this.ComputadoraPanel.TabIndex = 5;
+            // 
+            // pbx_servicioComputo
+            // 
+            this.pbx_servicioComputo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pbx_servicioComputo.Location = new System.Drawing.Point(258, 68);
+            this.pbx_servicioComputo.Name = "pbx_servicioComputo";
+            this.pbx_servicioComputo.Size = new System.Drawing.Size(174, 154);
+            this.pbx_servicioComputo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbx_servicioComputo.TabIndex = 4;
+            this.pbx_servicioComputo.TabStop = false;
             // 
             // rb_LimpiezaPC
             // 
@@ -293,86 +310,42 @@ namespace ExamenIIParcial_ScarlethBaquedano.Vistas
             this.label6.TabIndex = 0;
             this.label6.Text = "Servicios para equipo de cómputo";
             // 
-            // btn_cancelar
-            // 
-            this.btn_cancelar.Location = new System.Drawing.Point(215, 655);
-            this.btn_cancelar.Name = "btn_cancelar";
-            this.btn_cancelar.Size = new System.Drawing.Size(98, 35);
-            this.btn_cancelar.TabIndex = 24;
-            this.btn_cancelar.Text = "Cancelar";
-            this.btn_cancelar.UseVisualStyleBackColor = true;
-            // 
-            // btn_eliminar
-            // 
-            this.btn_eliminar.Location = new System.Drawing.Point(111, 655);
-            this.btn_eliminar.Name = "btn_eliminar";
-            this.btn_eliminar.Size = new System.Drawing.Size(98, 35);
-            this.btn_eliminar.TabIndex = 23;
-            this.btn_eliminar.Text = "Eliminar";
-            this.btn_eliminar.UseVisualStyleBackColor = true;
-            // 
             // btn_guardar
             // 
-            this.btn_guardar.Location = new System.Drawing.Point(261, 603);
+            this.btn_guardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(167)))), ((int)(((byte)(251)))));
+            this.btn_guardar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_guardar.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btn_guardar.Location = new System.Drawing.Point(292, 603);
             this.btn_guardar.Name = "btn_guardar";
             this.btn_guardar.Size = new System.Drawing.Size(98, 35);
             this.btn_guardar.TabIndex = 22;
             this.btn_guardar.Text = "Guardar";
-            this.btn_guardar.UseVisualStyleBackColor = true;
-            // 
-            // btn_modificar
-            // 
-            this.btn_modificar.Location = new System.Drawing.Point(328, 655);
-            this.btn_modificar.Name = "btn_modificar";
-            this.btn_modificar.Size = new System.Drawing.Size(98, 35);
-            this.btn_modificar.TabIndex = 21;
-            this.btn_modificar.Text = "Modificar";
-            this.btn_modificar.UseVisualStyleBackColor = true;
+            this.btn_guardar.UseVisualStyleBackColor = false;
             // 
             // btn_limpiar
             // 
-            this.btn_limpiar.Location = new System.Drawing.Point(140, 603);
+            this.btn_limpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(167)))), ((int)(((byte)(251)))));
+            this.btn_limpiar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_limpiar.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btn_limpiar.Location = new System.Drawing.Point(147, 603);
             this.btn_limpiar.Name = "btn_limpiar";
             this.btn_limpiar.Size = new System.Drawing.Size(98, 35);
             this.btn_limpiar.TabIndex = 20;
             this.btn_limpiar.Text = "Limpiar";
-            this.btn_limpiar.UseVisualStyleBackColor = true;
+            this.btn_limpiar.UseVisualStyleBackColor = false;
             // 
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
             // 
-            // pbx_ServicioCelular
-            // 
-            this.pbx_ServicioCelular.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbx_ServicioCelular.Location = new System.Drawing.Point(242, 70);
-            this.pbx_ServicioCelular.Name = "pbx_ServicioCelular";
-            this.pbx_ServicioCelular.Size = new System.Drawing.Size(174, 154);
-            this.pbx_ServicioCelular.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbx_ServicioCelular.TabIndex = 4;
-            this.pbx_ServicioCelular.TabStop = false;
-            // 
-            // pbx_servicioComputo
-            // 
-            this.pbx_servicioComputo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbx_servicioComputo.Location = new System.Drawing.Point(258, 68);
-            this.pbx_servicioComputo.Name = "pbx_servicioComputo";
-            this.pbx_servicioComputo.Size = new System.Drawing.Size(174, 154);
-            this.pbx_servicioComputo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbx_servicioComputo.TabIndex = 4;
-            this.pbx_servicioComputo.TabStop = false;
-            // 
             // TipoSoporteView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1013, 702);
-            this.Controls.Add(this.btn_cancelar);
-            this.Controls.Add(this.btn_eliminar);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(219)))), ((int)(((byte)(253)))));
+            this.ClientSize = new System.Drawing.Size(1013, 678);
             this.Controls.Add(this.CelularPanel);
             this.Controls.Add(this.btn_guardar);
-            this.Controls.Add(this.btn_modificar);
             this.Controls.Add(this.btn_limpiar);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.dtp_fecha);
@@ -390,13 +363,13 @@ namespace ExamenIIParcial_ScarlethBaquedano.Vistas
             this.groupBox1.PerformLayout();
             this.CelularPanel.ResumeLayout(false);
             this.CelularPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbx_ServicioCelular)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.ComputadoraPanel.ResumeLayout(false);
             this.ComputadoraPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbx_ServicioCelular)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_servicioComputo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -406,10 +379,7 @@ namespace ExamenIIParcial_ScarlethBaquedano.Vistas
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        public System.Windows.Forms.Button btn_cancelar;
-        public System.Windows.Forms.Button btn_eliminar;
         public System.Windows.Forms.Button btn_guardar;
-        public System.Windows.Forms.Button btn_modificar;
         public System.Windows.Forms.Button btn_limpiar;
         public System.Windows.Forms.GroupBox groupBox2;
         public System.Windows.Forms.DateTimePicker dtp_fecha;

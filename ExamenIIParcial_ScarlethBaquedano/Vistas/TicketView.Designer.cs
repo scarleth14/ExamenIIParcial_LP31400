@@ -39,7 +39,7 @@ namespace ExamenIIParcial_ScarlethBaquedano.Vistas
             this.panel1 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.btn_generarTicket = new System.Windows.Forms.Button();
-            this.btn_nuevoTicket = new System.Windows.Forms.Button();
+            this.btn_limpiar = new System.Windows.Forms.Button();
             this.txt_numeroTicket = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -106,7 +106,7 @@ namespace ExamenIIParcial_ScarlethBaquedano.Vistas
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(208)))), ((int)(((byte)(253)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(142)))), ((int)(((byte)(52)))));
             this.panel1.Controls.Add(this.label5);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -128,21 +128,25 @@ namespace ExamenIIParcial_ScarlethBaquedano.Vistas
             // 
             // btn_generarTicket
             // 
+            this.btn_generarTicket.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(148)))), ((int)(((byte)(63)))));
+            this.btn_generarTicket.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_generarTicket.Location = new System.Drawing.Point(39, 492);
             this.btn_generarTicket.Name = "btn_generarTicket";
             this.btn_generarTicket.Size = new System.Drawing.Size(124, 50);
             this.btn_generarTicket.TabIndex = 9;
             this.btn_generarTicket.Text = "Generar ticket";
-            this.btn_generarTicket.UseVisualStyleBackColor = true;
+            this.btn_generarTicket.UseVisualStyleBackColor = false;
             // 
-            // btn_nuevoTicket
+            // btn_limpiar
             // 
-            this.btn_nuevoTicket.Location = new System.Drawing.Point(210, 492);
-            this.btn_nuevoTicket.Name = "btn_nuevoTicket";
-            this.btn_nuevoTicket.Size = new System.Drawing.Size(124, 50);
-            this.btn_nuevoTicket.TabIndex = 10;
-            this.btn_nuevoTicket.Text = "Nuevo ticket";
-            this.btn_nuevoTicket.UseVisualStyleBackColor = true;
+            this.btn_limpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(148)))), ((int)(((byte)(63)))));
+            this.btn_limpiar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_limpiar.Location = new System.Drawing.Point(210, 492);
+            this.btn_limpiar.Name = "btn_limpiar";
+            this.btn_limpiar.Size = new System.Drawing.Size(124, 50);
+            this.btn_limpiar.TabIndex = 10;
+            this.btn_limpiar.Text = "Limpiar";
+            this.btn_limpiar.UseVisualStyleBackColor = false;
             // 
             // txt_numeroTicket
             // 
@@ -156,9 +160,10 @@ namespace ExamenIIParcial_ScarlethBaquedano.Vistas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(216)))), ((int)(((byte)(182)))));
             this.ClientSize = new System.Drawing.Size(382, 580);
             this.Controls.Add(this.txt_numeroTicket);
-            this.Controls.Add(this.btn_nuevoTicket);
+            this.Controls.Add(this.btn_limpiar);
             this.Controls.Add(this.btn_generarTicket);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.txt_estadoTicket);
@@ -190,7 +195,7 @@ namespace ExamenIIParcial_ScarlethBaquedano.Vistas
         public System.Windows.Forms.Label label4;
         public System.Windows.Forms.TextBox txt_estadoTicket;
         public System.Windows.Forms.Button btn_generarTicket;
-        public System.Windows.Forms.Button btn_nuevoTicket;
+        public System.Windows.Forms.Button btn_limpiar;
         public System.Windows.Forms.TextBox txt_numeroTicket;
     }
 }

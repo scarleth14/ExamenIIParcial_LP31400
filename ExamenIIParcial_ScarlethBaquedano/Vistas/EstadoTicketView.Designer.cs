@@ -29,6 +29,7 @@ namespace ExamenIIParcial_ScarlethBaquedano.Vistas
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -39,12 +40,14 @@ namespace ExamenIIParcial_ScarlethBaquedano.Vistas
             this.btn_aceptar = new System.Windows.Forms.Button();
             this.dtp_fechaSolicitud = new System.Windows.Forms.DateTimePicker();
             this.btn_limpiar = new System.Windows.Forms.Button();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(208)))), ((int)(((byte)(253)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(149)))), ((int)(((byte)(251)))));
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -57,7 +60,7 @@ namespace ExamenIIParcial_ScarlethBaquedano.Vistas
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Hello Valentica", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(152, 23);
+            this.label1.Location = new System.Drawing.Point(153, 30);
             this.label1.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(359, 75);
@@ -115,12 +118,14 @@ namespace ExamenIIParcial_ScarlethBaquedano.Vistas
             // 
             // btn_aceptar
             // 
-            this.btn_aceptar.Location = new System.Drawing.Point(212, 345);
+            this.btn_aceptar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(131)))), ((int)(((byte)(250)))));
+            this.btn_aceptar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_aceptar.Location = new System.Drawing.Point(197, 345);
             this.btn_aceptar.Name = "btn_aceptar";
             this.btn_aceptar.Size = new System.Drawing.Size(107, 42);
             this.btn_aceptar.TabIndex = 9;
             this.btn_aceptar.Text = "Aceptar";
-            this.btn_aceptar.UseVisualStyleBackColor = true;
+            this.btn_aceptar.UseVisualStyleBackColor = false;
             // 
             // dtp_fechaSolicitud
             // 
@@ -133,17 +138,24 @@ namespace ExamenIIParcial_ScarlethBaquedano.Vistas
             // 
             // btn_limpiar
             // 
-            this.btn_limpiar.Location = new System.Drawing.Point(353, 345);
+            this.btn_limpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(131)))), ((int)(((byte)(250)))));
+            this.btn_limpiar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_limpiar.Location = new System.Drawing.Point(338, 345);
             this.btn_limpiar.Name = "btn_limpiar";
             this.btn_limpiar.Size = new System.Drawing.Size(107, 42);
             this.btn_limpiar.TabIndex = 11;
             this.btn_limpiar.Text = "Limpiar";
-            this.btn_limpiar.UseVisualStyleBackColor = true;
+            this.btn_limpiar.UseVisualStyleBackColor = false;
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // EstadoTicketView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(210)))), ((int)(((byte)(253)))));
             this.ClientSize = new System.Drawing.Size(654, 409);
             this.Controls.Add(this.btn_limpiar);
             this.Controls.Add(this.dtp_fechaSolicitud);
@@ -160,6 +172,7 @@ namespace ExamenIIParcial_ScarlethBaquedano.Vistas
             this.Text = "EstadoTicketView";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -177,5 +190,6 @@ namespace ExamenIIParcial_ScarlethBaquedano.Vistas
         public System.Windows.Forms.Button btn_aceptar;
         public System.Windows.Forms.DateTimePicker dtp_fechaSolicitud;
         public System.Windows.Forms.Button btn_limpiar;
+        public System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

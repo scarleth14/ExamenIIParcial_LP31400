@@ -2,11 +2,9 @@
 using ExamenIIParcial_ScarlethBaquedano.Modelos.Entidades;
 using ExamenIIParcial_ScarlethBaquedano.Vistas;
 using System;
-using System.Collections.Generic;
-using System.Linq;
+using System.Drawing;
 using System.Security.Cryptography;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ExamenIIParcial_ScarlethBaquedano.Controladores
@@ -22,6 +20,69 @@ namespace ExamenIIParcial_ScarlethBaquedano.Controladores
 
             registro.btn_crearUsuario.Click += new EventHandler(CrearUsuario);
             registro.btn_cancelar.Click += new EventHandler(Cancelar);
+            registro.txt_nombre.Enter += new EventHandler(txt_nombre_Enter);
+            registro.txt_nombre.Leave += new EventHandler(txt_nombre_Leave);
+            registro.txt_correo.Enter += new EventHandler(txt_correo_Enter);
+            registro.txt_correo.Leave += new EventHandler(txt_correo_Leave);
+            registro.txt_contrasena.Enter += new EventHandler(txt_contrasena_Enter);
+            registro.txt_contrasena.Leave += new EventHandler(txt_contrasena_Leave);
+        }
+
+        private void txt_nombre_Enter(object sender, EventArgs e)
+        {
+            if (registro.txt_nombre.Text == "NOMBRE")
+            {
+                registro.txt_nombre.Text = "";
+                registro.txt_nombre.ForeColor = Color.LightGray;
+            }
+
+        }
+
+        private void txt_nombre_Leave(object sender, EventArgs e)
+        {
+            if (registro.txt_nombre.Text == "")
+            {
+                registro.txt_nombre.Text = "NOMBRE";
+                registro.txt_nombre.ForeColor = Color.DimGray;
+            }
+        }
+
+        private void txt_correo_Enter(object sender, EventArgs e)
+        {
+            if (registro.txt_correo.Text == "CORREO")
+            {
+                registro.txt_correo.Text = "";
+                registro.txt_correo.ForeColor = Color.LightGray;
+            }
+        }
+
+        private void txt_correo_Leave(object sender, EventArgs e)
+        {
+            if (registro.txt_correo.Text == "")
+            {
+                registro.txt_correo.Text = "CORREO";
+                registro.txt_correo.ForeColor = Color.DimGray;
+            }
+        }
+
+        private void txt_contrasena_Enter(object sender, EventArgs e)
+        {
+            if (registro.txt_contrasena.Text == "CONTRASEÑA")
+            {
+                registro.txt_contrasena.Text = "";
+                registro.txt_contrasena.ForeColor = Color.LightGray;
+                registro.txt_contrasena.UseSystemPasswordChar = true;
+            }
+        }
+
+        private void txt_contrasena_Leave(object sender, EventArgs e)
+        {
+            if (registro.txt_contrasena.Text == "")
+            {
+                registro.txt_contrasena.Text = "CONTRASEÑA";
+                registro.txt_contrasena.ForeColor = Color.DimGray;
+                registro.txt_contrasena.UseSystemPasswordChar = false;
+            }
         }
 
         private void Cancelar(object sender, EventArgs e)

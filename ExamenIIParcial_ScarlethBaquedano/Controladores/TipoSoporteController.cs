@@ -2,11 +2,6 @@
 using ExamenIIParcial_ScarlethBaquedano.Modelos.Entidades;
 using ExamenIIParcial_ScarlethBaquedano.Vistas;
 using System;
-using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ExamenIIParcial_ScarlethBaquedano.Controladores
@@ -72,11 +67,19 @@ namespace ExamenIIParcial_ScarlethBaquedano.Controladores
                 vista.IdentidadMaskedTextBox.Focus();
                 return;
             }
+            else
+            {
+                vista.errorProvider1.SetError(vista.IdentidadMaskedTextBox, null);
+            }
             if (vista.txt_nombre.Text == "")
             {
                 vista.errorProvider1.SetError(vista.txt_nombre, "Ingrese un nombre");
                 vista.txt_nombre.Focus();
                 return;
+            }
+            else
+            {
+                vista.errorProvider1.SetError(vista.txt_nombre, null);
             }
 
             try

@@ -2,10 +2,6 @@
 using ExamenIIParcial_ScarlethBaquedano.Modelos.Entidades;
 using ExamenIIParcial_ScarlethBaquedano.Vistas;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ExamenIIParcial_ScarlethBaquedano.Controladores
@@ -21,6 +17,15 @@ namespace ExamenIIParcial_ScarlethBaquedano.Controladores
         {
             vista = view;
             vista.btn_generarTicket.Click += new EventHandler(GenerarTicket);
+            vista.btn_limpiar.Click += new EventHandler(Limpiar);
+        }
+
+        private void Limpiar(object sender, EventArgs e)
+        {
+            vista.txt_numeroTicket.Clear();
+            vista.txt_nombreCliente.Clear();
+            vista.txt_tipoSoporte.Clear();
+            vista.txt_estadoTicket.Clear();
         }
 
         public TicketController(DetalleTicketView view)
@@ -57,8 +62,6 @@ namespace ExamenIIParcial_ScarlethBaquedano.Controladores
             {
                 MessageBox.Show("No se pudo agregar");
             }
-
-            
         }
 
         public string GenNumeroTicket()

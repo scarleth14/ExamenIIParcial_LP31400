@@ -2,10 +2,6 @@
 using ExamenIIParcial_ScarlethBaquedano.Modelos.Entidades;
 using ExamenIIParcial_ScarlethBaquedano.Vistas;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ExamenIIParcial_ScarlethBaquedano.Controladores
@@ -33,6 +29,26 @@ namespace ExamenIIParcial_ScarlethBaquedano.Controladores
 
         private void Aceptar(object sender, EventArgs e)
         {
+            if (vista.txt_nombreCliente.Text == " ")
+            {
+                vista.errorProvider1.SetError(vista.txt_nombreCliente, "Ingrese el nombre del cliente");
+                vista.txt_nombreCliente.Focus();
+                return;
+            }
+            else
+            {
+                vista.errorProvider1.SetError(vista.txt_nombreCliente, null);
+            }
+            if (vista.cb_estadoTicket.Text == " ")
+            {
+                vista.errorProvider1.SetError(vista.cb_estadoTicket, "Seleccione el estado del ticket");
+                vista.cb_estadoTicket.Focus();
+                return;
+            }
+            else
+            {
+                vista.errorProvider1.SetError(vista.cb_estadoTicket, null);
+            }
             bool inserto = false;
 
             estadoTicket.NombreCliente = vista.txt_nombreCliente.Text;
